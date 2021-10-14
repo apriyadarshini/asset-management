@@ -13,7 +13,9 @@ source ./assetenv/bin/activate
 pip install -r requirements.txt
 
 **Make migrations and migrate:**
+
 python manage.py makemigrations
+
 python manage.py migrate
 
 **Run the server:**
