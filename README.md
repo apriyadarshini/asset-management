@@ -1,25 +1,25 @@
-Steps to run the server:
+**Steps to run the server**:
 
-clone this repo:
+**clone this repo:**
 git clone https://github.com/apriyadarshini/asset-management.git
 
-create a virtual env
+**create a virtual env**
 python3 -m venv assetenv
 
-Actvate the virtual env
+**Activate the virtual env**
 source ./assetenv/bin/activate
 
-Install the requirements
+**Install the requirements**
 pip install -r requirements.txt
 
-Make migrations and migrate:
+**Make migrations and migrate:**
 python manage.py makemigrations
 python manage.py migrate
 
-Run the server:
+**Run the server:**
 python manage.py runserver
 
-Usecase:
+**Usecase:**
 
 1) Open http://127.0.0.1:8000/ in a web browser
 2) The links to view analysts and assets when clicked should ask for authentication
@@ -28,6 +28,6 @@ Usecase:
 5) Try the analysts and assets APIs : http://localhost:8000/analysts/ and http://localhost:8000/assets/ . It should now display the details.
 6) logout: http://localhost:8000/logout/ and then try to access  http://localhost:8000/analysts/ and http://localhost:8000/assets/. This will now fail with authentiaiton required error. 
 
-Analysts and Assets API accept both GET and POST requests.
+**Note** Analysts and Assets API accept both GET and POST requests.
 
 
